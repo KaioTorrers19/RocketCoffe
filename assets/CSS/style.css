@@ -1,0 +1,307 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+/* Desktop */
+body{
+    background-color: #000;
+}
+.blurs{
+    z-index: 1;
+}
+
+.blur1{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: fixed;
+    width: 100%;  
+}
+
+.blur2{
+top: 0%;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+position: fixed;
+}
+
+header{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.menu{
+    z-index: 0;
+    display: block;
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    letter-spacing: 0;
+    list-style: none;
+    padding: 2rem;
+}
+
+.menu li{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    border-radius: 10px;
+    background-color: #8257e5;
+    color: white;
+}
+
+.menu li:active{
+    opacity: 50%;
+}
+
+.but-desktop{
+    border-radius: 10px;
+    border: 1px solid #8257e5;
+    padding: 1.5rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    z-index: 0;
+}
+
+button:hover{
+    transition: all 1s ease-out;
+    background-color: #8257e5;
+}
+
+
+.btn-desktop{
+z-index: 0;
+}
+
+
+.title{
+position: relative;
+margin-top: 5rem;
+display: flex;
+justify-content: center;
+}
+
+.title h1{
+color: white;
+font-weight: 100;
+font-size: 10vh;
+}
+
+.title h1 span{
+
+color: black;
+text-shadow: -1px -1px 0 #8257e5, 1px -1px 0 #8257e5, -1px 1px 0 #8257e5, 1px 1px 0 #8257e5;
+}
+
+.image-desktop{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Final-desktop */
+.mobile-element{
+    display: none;
+}
+@media (min-width:769){
+.desktop-elements{
+    display: none;
+}
+.mobile-element{
+    display: block;
+}
+}
+/* incio- Mobile */
+
+
+
+
+
+@media (max-width: 768px){
+    
+.desktop-elements{
+    display: none;
+}
+.mobile-element{
+    display: block;
+}
+
+}
+
+/* Mobile */
+nav{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+}
+
+.container-text{
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight:600;
+    justify-content: center;
+}
+
+.btn-mobile{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.but-mobile{
+z-index: 0;
+border: 1px solid #8257e5;
+background-color: transparent;
+border-radius: 5px;
+color: #fff;
+padding: 10px;
+font-size: 11px;
+font-weight: 800px;
+}
+
+.title-mobile{
+    z-index: 0;
+    position: relative;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.title-mobile h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.title-mobile span{
+    margin-bottom: 50px;
+    color: black;
+    text-shadow: -1px -1px 0 #8257e5, 1px -1px 0 #8257e5, -1px 1px 0 #8257e5, 1px 1px 0 #8257e5;
+}
+
+
+
+/* .Coffe-mobile{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Coffe-mobile img{
+    margin-top: 9rem;
+    width: 20rem;
+    height: 100%;
+}
+
+
+.blur-mobile{
+    margin-top: 14.5rem;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.blur-mobile img{
+    width: 100%;
+    height: 14.5rem;
+} */
+
+
+.blur-mobile{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+}
+
+
+.blur-mobile img{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.Coffe-mobile{
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Coffe-mobile img{
+    position: absolute;
+    width: 100%;
+}
+
+#Hamburguer-click:hover{
+    cursor: pointer;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-options{
+ width: 100%;
+}
+
+.menu-options  li{
+    padding: 15px;
+    border: solid 0.5px white;
+    color: white;
+}
+
+.menu-options  li:hover{
+    background-color: #8257e5;
+    transition: all 2s ease-out;
+
+}
+
+.home {
+    padding-left: 10px !important;
+    border-left-width: 5px !important;
+    border-left-color: #8257e5 !important;
+}
+
